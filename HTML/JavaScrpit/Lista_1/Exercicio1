@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Insira sua idade</h1>
+    <input type="text" id="input_idade">
+<h1>Clique no botão que te represente</h1>
+    <button onclick="aposentarH()">Homen</button>
+    <button onclick="aposentarM()">Mulher</button>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function aposentarH(){
+div_mensagem.innerHTML = 'Ainda falta:' + (Number(70) - (Number(input_idade.value)));
+ }
+ function aposentarM(){
+div_mensagem.innerHTML = 'Ainda falta:' + (Number(60) - (Number(input_idade.value)));
+ }
+</script>
