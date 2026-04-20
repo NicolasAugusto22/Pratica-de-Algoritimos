@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Quanto custa a passgem ?</h1>
+    <input type="text" id="input_passagem">
+<h1>Quantas viagens você fará esse mês ?</h1>
+    <input type="text" id="input_qtdpassagens">
+    <button onclick="somareconomia()">Ver economia</button>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function somareconomia(){
+div_mensagem.innerHTML = 'Você economizará R$:' + (Number(input_passagem.value) / (Number(2))) * (Number(input_qtdpassagens.value)) + ' por mês';
+ }
+</script>
