@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Qual o seu KI ?</h1>
+    <input type="text" id="input_ki">
+<h1>Transformar em:</h1>
+    <button onclick="sai1()">Transformar SSJ</button>
+    <button onclick="sai2()">Transformar SSJ2</button>
+    <button onclick="sai3()">Transformar SSJ3</button>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function sai1(){
+div_mensagem.innerHTML = 'Após se transformar em SSJ, o ki desse Saiyajin passa a ser de ' +  Number(input_ki.value) * 50;
+ }
+ function sai2(){
+div_mensagem.innerHTML = 'Após se transformar em SSJ2, o ki desse Saiyajin passa a ser de' +  Number(input_ki.value) * 100;
+ }
+ function sai3(){
+div_mensagem.innerHTML = 'Após se transformar em SSJ3, o ki desse Saiyajin passa a ser de' + Number(input_ki.value) * 200;
+ }
+</script>
