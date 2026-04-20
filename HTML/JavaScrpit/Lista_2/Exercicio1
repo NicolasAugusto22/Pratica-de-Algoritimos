@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Insira o primeiro número:</h1>
+    <input type="text" id="input_numero">
+    <h1>Insira o segundo número:</h1>
+    <input type="text" id="input_numero2">
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="Multiplicar()">Multiplicar</button>
+    <button onclick="Divisao()">Dividir</button>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function somar(){
+        let n1=input_numero.value;
+        let n2=input_numero2.value;
+        let n3 = Number(n1)+Number(n2);
+div_mensagem.innerHTML = `A soma entre ${n1} e ${n2} é ${n3}`;
+}
+function subtrair(){
+    let n1=input_numero.value;
+    let n2=input_numero2.value;
+    let n3=n1-n2;
+    div_mensagem.innerHTML =`A diferença entre ${n1} e ${n2} é ${n3}`;
+}
+function Multiplicar(){
+    let n1=input_numero.value;
+    let n2=input_numero2.value;
+    let n3=n1*n2;
+    div_mensagem.innerHTML =`O produto entre ${n1} e ${n2} é ${n3}`;
+}
+function Divisao(){
+    let n1=input_numero.value;
+    let n2=input_numero2.value;
+    let n3=n1/n2;
+    div_mensagem.innerHTML =`A razão entre ${n1} e ${n2} é ${n3}`;
+}
+</script>
