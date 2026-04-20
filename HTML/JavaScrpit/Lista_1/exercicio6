@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Quantos B-Dollars você vai converter?</h1>
+    <input type="text" id="input_bd">
+<h1>Qual a cotação?</h1>
+    <input type="text" id="input_cota">
+    <button onclick="imc()">Calcular Câmbio</button>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function imc(){
+div_mensagem.innerHTML = 'Ao converter seus B-Dollars, o dinheiro disponível será: ' +  Number(input_bd.value) * (Number(input_bd.value) - Number(5.50)) ;
+ }
+</script>
